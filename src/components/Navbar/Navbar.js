@@ -4,6 +4,7 @@ import logo from "../../images/logo.svg";
 import ButtonNav from "../ButtonNav/ButtonNav";
 import Button1 from "../Button1";
 import Button2 from "../Button2";
+import { dropdown_items } from "../../data/data";
 const Navbar = () => {
     const [hover, setHover] = useState(false);
     const [hover_item, setHover_item] = useState();
@@ -14,10 +15,20 @@ const Navbar = () => {
         <ButtonNav text="Resources" />,
     ];
 
-    const dropdown_items = [
-        {id: 1, items: [<li className="dropdown_items">Areas</li>,
-        <li className="dropdown_items">Areas</li>,]},
-    ];
+    
+
+    // const dropdown_items = [
+    //     {
+    //         id: 1,
+    //         items: [
+    //             <li className="dropdown_items">Areas</li>,
+    //             <li className="dropdown_items">Courses</li>,
+    //             <li className="dropdown_items">Instructors</li>,
+    //             <li className="dropdown_items">Learning Paths</li>,
+    //             <li className="dropdown_items">Certificaions</li>,
+    //         ],
+    //     },
+    // ];
 
     return (
         <div style={{position: "absolute"}}>
@@ -29,7 +40,7 @@ const Navbar = () => {
                         <span
                             onMouseEnter={() => {
                                 setHover(true);
-                                setHover_item(i);
+                                setHover_item(i+1);
                             }}
                             onMouseLeave={() => setHover(false)}
                             key={i}
@@ -64,7 +75,17 @@ const Navbar = () => {
                 style={{transform: !hover && "translateY(-120%)"}}
             >
                 <div className="container2 nav_grid">
-                    <li className="dropdown_items">Areas</li>
+                    {dropdown_items
+                        .filter((item) => item.id == hover_item)
+                        .map((item) =>  ( 
+                            item.items.map((litem) => (
+                              <> 
+                                  {litem}
+                              </>
+                                
+                            ))
+                            
+                        ))}
                 </div>
             </nav>
         </div>
