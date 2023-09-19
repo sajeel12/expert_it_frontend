@@ -26,6 +26,10 @@ const Home = () => {
                     </h2>
                 </div>
             </section>
+            <section className="home_section2" >
+                
+
+            </section>
         </div>
     );
 };
