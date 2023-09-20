@@ -1,3 +1,7 @@
+import './data.scss';
+// import ''
+
+
 export const dropdown_items = [
     {
         id: 1,
@@ -28,4 +32,52 @@ export const dropdown_items = [
             <li className="dropdown_items">Help Center</li>,
         ],
     },
+];
+
+
+const handleDragStart = (e) => e.preventDefault();
+
+export const carousel_data1 = [
+    <img  className='carousel_data1'
+        src=""
+      
+        // alt="s"
+        // onDragStart={handleDragStart}
+        // role="presentation"
+    />,
+    <img className='carousel_data1'
+        src="https://goldbelly.imgix.net/uploads/card/image/1502/Grill_Kits_Evergreen2_-_HP_Card.jpg?ixlib=react-9.0.2&auto=format&ar=4%3A5"
+   
+        // alt="s"
+        // onDragStart={handleDragStart}
+        // role="presentation"
+    />,
+    <img className='carousel_data1'
+        src="https://goldbelly.imgix.net/uploads/card/image/1502/Grill_Kits_Evergreen2_-_HP_Card.jpg?ixlib=react-9.0.2&auto=format&ar=4%3A5"
+   
+        // alt="s"
+        // onDragStart={handleDragStart}
+        // role="presentation"
+    />,
+    <img className='carousel_data1'
+        src="https://goldbelly.imgix.net/uploads/card/image/1502/Grill_Kits_Evergreen2_-_HP_Card.jpg?ixlib=react-9.0.2&auto=format&ar=4%3A5"
+        
+        // alt="s"
+        // onDragStart={handleDragStart}
+        // role="presentation"
+    />,
+    <img className='carousel_data1'
+        src="https://goldbelly.imgix.net/uploads/card/image/1502/Grill_Kits_Evergreen2_-_HP_Card.jpg?ixlib=react-9.0.2&auto=format&ar=4%3A5"
+      
+        // alt="s"
+        // onDragStart={handleDragStart}
+        // role="presentation"
+    />,
+    <img className='carousel_data1'
+        src="https://goldbelly.imgix.net/uploads/card/image/1502/Grill_Kits_Evergreen2_-_HP_Card.jpg?ixlib=react-9.0.2&auto=format&ar=4%3A5"
+     
+        // alt="s"
+        // onDragStart={handleDragStart}
+        // role="presentation"
+    />,
 ];
