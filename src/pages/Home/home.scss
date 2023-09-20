@@ -52,13 +52,37 @@
     }
 
     .home_section2{
-        background-color: #E9E9ED;
-        background: url("../../images/section2_background.svg");
+        
+        background: url("../../images/section2_background.svg"), rgb(224, 224, 224);
         background-size: cover;
         background-repeat: no-repeat;
 
         height: 600px;
         width: 100%;
+        
+        .alice_carosel{
+            padding: 0px 30px;
+            transform: translateY(-100px);
+        }
+        
+        .text_section{
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            gap: 20px;
+            // width: 60%;
+            padding: 0px 10%;
+            text-align: center;
+            h3{
+                font-size: 40px;
+            }
+            p{
+                font-size: 25px;
+                color: rgba(99, 99, 99, 0.822);
+                line-height: 40px;
 
+            }
+        }
     }
 }

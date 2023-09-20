@@ -1,5 +1,16 @@
-.carousel_data1{
-    width: 250px;
-    height: 100px;
-    border-radius: 25px;   
+.carousel_data1 {
+    padding: 20px 110px;
+    border-radius: 25px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+
+        // width: 250px;
+        height: 61px;
+    }
+
 }
